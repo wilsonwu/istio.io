@@ -20,8 +20,8 @@ Istio 控制平面，并设置 `cluster2` {{< gloss "remote cluster" >}}从集�
 {{< warning >}}
 这些说明不适用于 AWS EKS 主集群部署。
 这种不兼容性背后的原因是 AWS 负载均衡器（LB）以完全限定域名（FQDN）的形式呈现，
-而从集群则使用 Kubernetes 服务类型 'ExternalName'。
-但是，'ExternalName' 类型专门支持 IP 地址，不支持 FQDN。
+而从集群则使用 Kubernetes 服务类型 `ExternalName`。
+但是，`ExternalName` 类型专门支持 IP 地址，不支持 FQDN。
 {{< /warning >}}
 
 在此配置中，集群 `cluster1` 将监测两个集群 API Server 的服务端点。
